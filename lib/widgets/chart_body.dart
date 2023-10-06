@@ -19,9 +19,9 @@ class CartBody extends StatelessWidget {
         border: Border.all(color: Colors.transparent),
       ),
       child: ListView(
-        
-        children: HomeItems.items.map((e) => ProductCart(img: e.img, title: e.description)).toList()
-      ),
+          children: HomeItems.items
+              .map((e) => ProductCart(img: e.img, title: e.description))
+              .toList()),
     );
   }
 }
